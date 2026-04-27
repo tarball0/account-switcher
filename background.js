@@ -1,7 +1,9 @@
-chrome.runtime.onMessage.addListener(function (command) {
+chrome.commands.onCommand.addListener(function (command) {
+	var isNewTab = command.includes('shift');
+	var account_num = command.substring(command.length - 1);
+	
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     var current_url = tabs[0].url;
-    var account_num = command.substring(command.length - 1);
     var update_url_regex = null;
     var update_acc = null;
 
@@ -20,7 +22,7 @@ chrome.runtime.onMessage.addListener(function (command) {
     if (update_acc && update_url_regex) {
       current_url = current_url.replace(update_url_regex, update_acc);
       console.log(current_url);
-      if (command.substring(0, command.length - 1) == "alt") {
+      if (!isNewTab) {
         chrome.tabs.update({ url: current_url });
       } else {
         chrome.tabs.create({ url: current_url });

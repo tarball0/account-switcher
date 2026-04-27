@@ -1,6 +1,6 @@
 {
   "name": "Account Switcher for Google Apps",
-  "description": "Use Alt + <num> key to switch between google accounts for various google apps like Gmail, Play music, Google Drive etc",
+  "description": "Use Alt + <num> key to switch between google accounts for various google apps like Gmail, Docs, Drive etc",
   "version": "1.7.0",
   "manifest_version": 2,
   "background": {
@@ -8,13 +8,6 @@
     "persistent": false
   },
   "permissions": ["tabs"], 
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["key_event.js"], 
-      "run_at": "document_start"
-    }
-  ],
   "browser_action": {
     "default_icon": "images/tabFlipper16.png",
     "default_popup": "popup.html",
@@ -25,5 +18,87 @@
     "32": "images/tabFlipper32.png",
     "48": "images/tabFlipper48.png",
     "128": "images/tabFlipper128.png"
+  },
+  "commands": {
+    "switch-0": {
+      "suggested_key": { "default": "Alt+0" },
+      "description": "Switch to Google Account 0 (Current Tab)"
+    },
+    "switch-1": {
+      "suggested_key": { "default": "Alt+1" },
+      "description": "Switch to Google Account 1 (Current Tab)"
+    },
+    "switch-2": {
+      "suggested_key": { "default": "Alt+2" },
+      "description": "Switch to Google Account 2 (Current Tab)"
+    },
+    "switch-3": {
+      "suggested_key": { "default": "Alt+3" },
+      "description": "Switch to Google Account 3 (Current Tab)"
+    },
+    "switch-4": {
+      "suggested_key": { "default": "Alt+4" },
+      "description": "Switch to Google Account 4 (Current Tab)"
+    },
+    "switch-5": {
+      "suggested_key": { "default": "Alt+5" },
+      "description": "Switch to Google Account 5 (Current Tab)"
+    },
+    "switch-6": {
+      "suggested_key": { "default": "Alt+6" },
+      "description": "Switch to Google Account 6 (Current Tab)"
+    },
+    "switch-7": {
+      "suggested_key": { "default": "Alt+7" },
+      "description": "Switch to Google Account 7 (Current Tab)"
+    },
+    "switch-8": {
+      "suggested_key": { "default": "Alt+8" },
+      "description": "Switch to Google Account 8 (Current Tab)"
+    },
+    "switch-9": {
+      "suggested_key": { "default": "Alt+9" },
+      "description": "Switch to Google Account 9 (Current Tab)"
+    },
+    "switch-shift-0": {
+      "suggested_key": { "default": "Alt+Shift+0" },
+      "description": "Switch to Google Account 0 (New Tab)"
+    },
+    "switch-shift-1": {
+      "suggested_key": { "default": "Alt+Shift+1" },
+      "description": "Switch to Google Account 1 (New Tab)"
+    },
+    "switch-shift-2": {
+      "suggested_key": { "default": "Alt+Shift+2" },
+      "description": "Switch to Google Account 2 (New Tab)"
+    },
+    "switch-shift-3": {
+      "suggested_key": { "default": "Alt+Shift+3" },
+      "description": "Switch to Google Account 3 (New Tab)"
+    },
+    "switch-shift-4": {
+      "suggested_key": { "default": "Alt+Shift+4" },
+      "description": "Switch to Google Account 4 (New Tab)"
+    },
+    "switch-shift-5": {
+      "suggested_key": { "default": "Alt+Shift+5" },
+      "description": "Switch to Google Account 5 (New Tab)"
+    },
+    "switch-shift-6": {
+      "suggested_key": { "default": "Alt+Shift+6" },
+      "description": "Switch to Google Account 6 (New Tab)"
+    },
+    "switch-shift-7": {
+      "suggested_key": { "default": "Alt+Shift+7" },
+      "description": "Switch to Google Account 7 (New Tab)"
+    },
+    "switch-shift-8": {
+      "suggested_key": { "default": "Alt+Shift+8" },
+      "description": "Switch to Google Account 8 (New Tab)"
+    },
+    "switch-shift-9": {
+      "suggested_key": { "default": "Alt+Shift+9" },
+      "description": "Switch to Google Account 9 (New Tab)"
+    }
   }
 }
