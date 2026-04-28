@@ -13,9 +13,9 @@ So google gives logged in accounts numbers: 0, 1, 2...
 
 So the extension makes use of that numbering.
 
-To switch to say account number 2, you have to press `Alt + 2` once you have already opened any of the supported google apps mentioned above.
+To switch to say account number 2, you have to press `Ctrl + 2` once you have already opened any of the supported google apps mentioned above.
 
-Say you have gmail account 0 open, you can press `Alt+2` to open the gmail account associated with account 2.
+Say you have gmail account 0 open, you can press `Ctrl+2` to open the gmail account associated with account 2.
 
 ### To Setup manually
 
@@ -28,4 +28,4 @@ Say you have gmail account 0 open, you can press `Alt+2` to open the gmail accou
 
 ### Customization
  
-You can change the shortcut key from default `Alt + <num>` to any preferred shortcut key. Change them on chrome://extensions/shortcuts
+You can change the shortcut key from default `Ctrl + <num>` to any preferred shortcut key. Change them on chrome://extensions/shortcuts
