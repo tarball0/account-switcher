@@ -14,6 +14,6 @@ Google gives the logged in accounts numbers, like: 0, 1, 2...
 This extension makes use of that numbering.
 
 ## Usage
-Press `Alt + <num>` to switch to the account associated with the specified number in the current page.  
-Press `Shift + Alt + <num>` to open the account in a new tab.
+Press `Ctrl + <num>` to switch to the account associated with the specified number in the current page.  
+Press `Ctrl + Shift + <num>` to open the account in a new tab.
 
